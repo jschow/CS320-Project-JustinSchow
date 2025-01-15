@@ -26,7 +26,7 @@ public class GreetingResource {
 
     @POST
     @Path("/personalized")
-    @Consumes(MediaType.APPLICATION_JSON)
+//    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
     public String personalizedHelloPost(Person p) {
         return "Hello " + p.getFirst() + " " + p.getLast();
